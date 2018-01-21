@@ -1,5 +1,6 @@
 #coding:utf8
 '''
+reproduce http://www.cnblogs.com/Liqiongyu/p/5911613.html
 随机生成0~10000000之间的数值
 '''
 import copy

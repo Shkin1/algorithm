@@ -1,0 +1,124 @@
+public class MyStack1 {
+	private Stack<Integer> stackData;
+	private Stack<Integer> stackMin;
+
+	public MyStack1(){
+		this.stackData = new Stack<Integer>();
+		this.stackMin = new Stack<Integer>();
+	}
+
+	public void push(int newNum){
+		if (this.stackMin.isEmpty()){
+			this.stackMin.push(newNum);
+		}else if (newNum <= this.getmin()) {
+			this.stackMin.push(newNum);
+		}
+		this.stackData.push(newNum);
+	}
+
+	public void pop(){
+		if (this.stackData.isEmpty()){
+			throw new RuntimeException("your stack is empty");
+		}
+		int value = this.stackData.pop();
+		if(value == this.getmin()){
+			this.stackMin.pop();
+		}
+		return value
+	}
+
+	public void getmin(){
+		if (this.stackMin.isEmpty()){
+			throw new RuntimeException("your stack is empty.");
+		}
+		return this.stackMin.peek();
+	}
+}
+
+peek  pop
+相同点：都返回栈顶的值。
+不同点：peek 不改变栈的值(不删除栈顶的值)
+
+
+import java.util.Stack;
+
+public class test03 {
+	
+	// 1. 取栈底元素并移除
+	public static int getAndRemoveLastElement(Stack<Integer> stack){
+		int result = stack.pop();
+		if (stack.isEmpty()){
+			return result;
+		}else{
+			int last = getAndRemoveLastElement(stack);
+			stack.push(result);
+			return last;
+		}
+			}
+	
+	//2. 逆序
+	public static void reverse(Stack<Integer> stack){
+		if (stack.isEmpty()){
+			return;
+		}
+		int i = getAndRemoveLastElement(stack);
+		reverse(stack);
+		stack.push(i);
+		
+	}
+	
+	public static void main(String[] args) {
+		Stack s1 = new Stack<Integer>();
+		s1.push(1);
+		s1.push(2);
+		s1.push(3);
+		s1.push(4);
+		reverse(s1);
+		System.out.println(s1);
+	}
+}
+
+
+
+
+
+result = []
+def getAndRemoveMin(x):
+    minitem = min(x)
+    x.remove(minitem)
+    return minitem
+
+def sortList(x):
+
+    if (len(x)==0):
+        return
+
+    minitem = getAndRemoveMin(x)
+    result.append(minitem)
+    sortList(x)
+
+sortList(L)
+
+print result
+
+
+
+
+
+// 03 栈实现栈排序
+
+public static void sortStackByStack(Stack<Integer> stack){
+	Stack<Integer> help = new Stack<Integer>();
+	while(!stack.isEmpty()){
+		int cur = stack.pop();
+		while (!help.isEmpty() && help.peek() < cur){
+			stack.push(help.pop());
+		}
+		help.push(cur);
+	}
+	while (!help.isEmpty()){
+		stack.push(help.pop())
+	}
+}
+
+
