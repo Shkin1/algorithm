@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bc5ba97-fce4-489e-bf6d-80a25dc30bc9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jpgnote/uml类图样例.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/DesignMode/Factory/SimpleFactory.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/DesignMode/Factory/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/DesignMode/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/DesignMode/Factory/SimpleFactoryAndStrategy.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/python/DesignMode/Factory/SimpleFactory.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/note" afterPath="$PROJECT_DIR$/note" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleFactory.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python/DesignMode/Factory/SimpleFactory.py">
+      <file leaf-file-name="SimpleFactoryAndStrategy.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python/DesignMode/Factory/SimpleFactoryAndStrategy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="559">
+              <caret line="94" column="3" lean-forward="true" selection-start-line="94" selection-start-column="3" selection-end-line="94" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -245,7 +241,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="algorithm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/DesignMode/Factory/SimpleFactory.py" />
+      <option name="SCRIPT_NAME" value="D:\Workspace\git\algorithm\python\DesignMode\Factory\SimpleFactoryAndStrategy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -428,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516543865048</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="version 1.0&#10;&#10;review">
+      <created>1517105015678</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1517105015678</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -500,10 +503,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/DesignMode/Factory/SimpleFactory.py">
+    <entry file="file://$PROJECT_DIR$/python/DesignMode/Factory/SimpleFactoryAndStrategy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="559">
+          <caret line="94" column="3" lean-forward="true" selection-start-line="94" selection-start-column="3" selection-end-line="94" selection-end-column="3" />
           <folding />
         </state>
       </provider>
